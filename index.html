@@ -3,6 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <title>Оплата Payeer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+      margin: 0;
+    }
+    form {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 320px;
+      width: 90%;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 18px 40px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
   <form method="GET" action="https://payeer.com/merchant/">
@@ -11,7 +45,7 @@
     <input type="hidden" name="m_amount" value="1400.00" />
     <input type="hidden" name="m_curr" value="RUB" />
     <input type="hidden" name="m_desc" value="Оплата Сборника" />
-    <input type="hidden" name="m_sign" value="0160F9F5E4E16BF421AEB3A3D3AA827E4D01BC8620730AC9BE80B37E5707F081" />
+    <input type="hidden" name="m_sign" value="PLLOXLVRhK8erdJL" />
     <button type="submit">Оплатить 1400 рублей</button>
   </form>
 </body>
