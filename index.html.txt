@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Оплата Payeer</title>
+</head>
+<body>
+  <form method="GET" action="https://payeer.com/merchant/">
+    <input type="hidden" name="m_shop" value="2233561537" />
+    <input type="hidden" name="m_orderid" value="12345" />
+    <input type="hidden" name="m_amount" value="1400.00" />
+    <input type="hidden" name="m_curr" value="RUB" />
+    <input type="hidden" name="m_desc" value="Оплата Сборника" />
+    <input type="hidden" name="m_sign" value="0160F9F5E4E16BF421AEB3A3D3AA827E4D01BC8620730AC9BE80B37E5707F081" />
+    <button type="submit">Оплатить 1400 рублей</button>
+  </form>
+</body>
+</html>
